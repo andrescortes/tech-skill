@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hotel-app
+  profiles:
+    active: dev
+  webflux:
+    base-path: /api/hotel
+server:
+  port: 8085
