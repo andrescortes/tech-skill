@@ -18,6 +18,6 @@ public class GlobalHandlerException {
                 .code(HttpStatus.NOT_FOUND.value())
                 .message(ex.getMessage())
                 .timestamp(LocalDateTime.now());
-        return
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorReponse.build());
     }
 }
